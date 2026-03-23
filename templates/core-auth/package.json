@@ -1,0 +1,38 @@
+{
+  "name": "core-auth-template",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "postinstall": "npm run build"
+  },
+  "dependencies": {
+    "@documenso/nodemailer-resend": "^4.0.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.10.1",
+    "otp-generator": "^4.0.1",
+    "pg": "^8.16.0",
+    "sequelize-typescript": "^2.1.6"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/express": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/nodemailer": "^6.4.16",
+    "@types/otp-generator": "^4.0.2",
+    "@types/node": "^22.10.1",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
+
